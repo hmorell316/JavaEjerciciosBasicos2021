@@ -41,6 +41,14 @@ public class EjerciciosBasicosJava {
         //en cualquier otro valor que tuviera velocidad devolvemos la multa grande
         return 2;
     }
+    
+    public boolean muyVanidoso(int numero){
+        if (numero % 11 < 2){//si la division da como resto cero
+            return true;
+            
+        }
+        return false;
+    }
 
     /**
      * @param args the command line arguments
@@ -55,9 +63,14 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.fiestaArdillas(70, true));
         
         System.out.println("Ejercicio multa");
-        System.out.println(ejercicio.fiestaArdillas(60, false));
-        System.out.println(ejercicio.fiestaArdillas(65, false));
-        System.out.println(ejercicio.fiestaArdillas(65, true));
+        System.out.println(ejercicio.multa(60, false));
+        System.out.println(ejercicio.multa(65, false));
+        System.out.println(ejercicio.multa(65, true));
+        
+        System.out.println("Ejercicio Vanidoso");
+        System.out.println(ejercicio.muyVanidoso(22));
+        System.out.println(ejercicio.muyVanidoso(23));
+        System.out.println(ejercicio.muyVanidoso(24));
         
         
     }
